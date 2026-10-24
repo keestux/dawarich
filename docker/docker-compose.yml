@@ -49,7 +49,10 @@ services:
     # command: postgres -c config_file=/etc/postgresql/postgresql.conf # Use custom config, uncomment if you want to use a custom config
 
   dawarich_app:
-    image: freikin/dawarich:latest
+    image: dawarich-local:latest
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
     container_name: dawarich_app
     volumes:
       - dawarich_public:/var/app/public

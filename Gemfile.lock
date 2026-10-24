@@ -7,6 +7,14 @@ GIT
       base64 (>= 0.1.0)
       csv (>= 3.0.0)
 
+GIT
+  remote: https://github.com/keestux/fit4ruby.git
+  revision: 2b6d9bcd6d43e4a42952cce8e59cb7a60ec9d8f4
+  branch: fix/full-field-name
+  specs:
+    fit4ruby (3.13.0)
+      bindata (~> 2.4.14)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -212,8 +220,6 @@ GEM
     ffi (1.17.2-x86-linux-gnu)
     ffi (1.17.2-x86_64-darwin)
     ffi (1.17.2-x86_64-linux-gnu)
-    fit4ruby (3.13.0)
-      bindata (~> 2.4.14)
     flipper (1.4.2)
       concurrent-ruby (< 2)
     flipper-active_record (1.4.2)
@@ -743,7 +749,7 @@ DEPENDENCIES
   fakeredis
   faraday (>= 2.14.2)
   ffaker
-  fit4ruby (~> 3.13)
+  fit4ruby!
   flipper (~> 1.4)
   flipper-active_record (~> 1.4)
   flipper-ui (~> 1.4)
@@ -815,7 +821,7 @@ DEPENDENCIES
   zlib (>= 3.2.3)
 
 RUBY VERSION
-   ruby 3.4.9p82
+  ruby 3.4.9p82
 
 BUNDLED WITH
-   2.5.21
+  4.0.23
